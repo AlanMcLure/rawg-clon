@@ -11,6 +11,6 @@ export class GameSearchService {
   constructor(private httpClient: HttpClient) { }
 
   searchGames(): Observable<any> {
-    return this.httpClient.get<any>(environment.BASE_API_URL);
+    return this.httpClient.get<any>(environment.BASE_API_URL + 'games');
   }
 }

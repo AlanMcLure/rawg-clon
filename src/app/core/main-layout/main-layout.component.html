@@ -2,5 +2,13 @@
   <h1 class="text-5xl">Rawg clon</h1>
   <input type="text" placeholder="Search..." class="bg-gray-800 text-white rounded-full px-4 py-2">
 </header>
-<main>
+<main class="content py-2 ">
+  <nav>
+    <ul>
+      <li><a routerLink="/games">Games</a></li>
+      <li><a routerLink="/platforms">Platforms</a></li>
+      <li><a routerLink="/stores">Stores</a></li>
+    </ul>
+  </nav>
+  <router-outlet></router-outlet>
 </main>
