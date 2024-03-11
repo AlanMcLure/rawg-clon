@@ -14,16 +14,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have the 'rawg-clon' title`, () => {
+  it(`should have the 'rawg-angular' title`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('rawg-clon');
+    expect(app.title).toEqual('rawg-angular');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, rawg-clon');
+    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, rawg-angular');
   });
 });
